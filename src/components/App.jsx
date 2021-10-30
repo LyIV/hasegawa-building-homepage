@@ -5,6 +5,7 @@ import { ChatIcon, CollectionIcon, DotsHorizontalIcon, LocationMarkerIcon, ViewL
 
 /* components */
 import Top from "./Top";
+import Access from "./Access";
 
 /* stylesheets */
 import "../stylesheets/tailwindcss.css";
@@ -64,6 +65,9 @@ export default function App() {
           <Switch>
             <Route exact path="/">
               <Top />
+            </Route>
+            <Route exact path="/access">
+              <Access />
             </Route>
           </Switch>
         </div>
