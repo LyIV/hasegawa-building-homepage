@@ -1,0 +1,47 @@
+.title {
+  @apply my-8 w-11/12;
+}
+
+.tags {
+  @apply my-1 p-0 w-11/12 h-8 flex flex-row items-center;
+}
+
+.tags label {
+  @apply mr-4 flex flex-row text-lg text-gray-500 items-center justify-center;
+}
+
+.tags input {
+  @apply hidden;
+}
+
+.tags input:checked + label {
+  @apply text-green-500;
+}
+
+.tag-icon {
+  @apply mr-1 h-5 w-5;
+}
+
+.information {
+  @apply my-4 w-11/12;
+}
+
+.information li {
+  @apply m-0 py-4 px-0 w-full border-t-4 border-dotted border-green-400;
+}
+
+.information-tags {
+  @apply mr-4 w-auto flex flex-row text-sm;
+}
+
+.information-tag-icon {
+  @apply mr-1 h-4 w-4;
+}
+
+.information-date {
+  @apply text-base;
+}
+
+.information-text {
+  @apply text-xl;
+}
