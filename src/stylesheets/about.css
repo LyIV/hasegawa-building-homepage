@@ -1,0 +1,45 @@
+.title {
+  @apply my-8 w-11/12 flex;
+}
+
+.about {
+  @apply m-0 p-0 w-11/12 border border-solid border-green-500;
+}
+
+.about tbody {
+  @apply m-0 p-0 flex flex-col items-center;
+}
+
+.about tr {
+  @apply m-0 p-0 w-full flex flex-row items-center border-collapse border border-solid border-green-500;
+}
+
+.about th {
+  @apply m-0 p-2 w-1/4 text-base font-bold;
+}
+
+.about td {
+  @apply m-0 py-2 px-4 w-3/4 text-base border-l-2 border-solid border-green-500;
+}
+
+.shortcuts {
+  @apply mt-8 my-4 mx-0 p-0 w-11/12 flex flex-row space-x-4 items-center justify-center;
+}
+
+.shortcuts li {
+  @apply m-0 p-0 flex flex-col flex-grow items-center justify-center;
+  color           : theme('colors.gray.50');
+  background-color: theme('colors.green.500');
+}
+
+.shortcuts a {
+  @apply mt-0 mb-1 py-2 px-0 w-full h-full flex flex-col items-center justify-center;
+}
+
+.shortcuts p {
+  @apply mt-1 mb-0 p-0 text-lg;
+}
+
+.shortcut-icon {
+  @apply w-8 h-8;
+}

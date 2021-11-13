@@ -6,6 +6,7 @@ import { ChatIcon, CollectionIcon, DotsHorizontalIcon, LocationMarkerIcon, ViewL
 /* components */
 import Top from "./Top";
 import Access from "./Access";
+import About from "./About";
 import Information from "./Information";
 
 /* stylesheets */
@@ -23,7 +24,7 @@ export default function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/history">History</Link></li>
             <li><Link to="/access">Access</Link></li>
-            <li><Link to="/company">About</Link></li>
+            <li><Link to="/about">About</Link></li>
             <li><Link to="/information">Information</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
@@ -69,6 +70,9 @@ export default function App() {
             </Route>
             <Route exact path="/access">
               <Access />
+            </Route>
+            <Route exact path="/about">
+              <About />
             </Route>
             <Route exact path="/information">
               <Information />
