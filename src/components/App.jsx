@@ -8,6 +8,7 @@ import Top from "./Top";
 import Access from "./Access";
 import About from "./About";
 import Information from "./Information";
+import Contact from "./Contact";
 
 /* stylesheets */
 import "../stylesheets/tailwindcss.css";
@@ -76,6 +77,9 @@ export default function App() {
             </Route>
             <Route exact path="/information">
               <Information />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
             </Route>
           </Switch>
         </div>
