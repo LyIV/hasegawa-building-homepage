@@ -23,7 +23,6 @@ export default function App() {
         <nav className="above-tab">
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/history">History</Link></li>
             <li><Link to="/access">Access</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/information">Information</Link></li>
@@ -37,10 +36,6 @@ export default function App() {
             <li className="below-tab-item">
               <ViewListIcon className="below-tab-icon" />
               <p>HOME</p>
-            </li>
-            <li>
-              <CollectionIcon className="below-tab-icon" />
-              <p>HISTORY</p>
             </li>
             <li>
               <Link to="/access" className="below-tab-item">
