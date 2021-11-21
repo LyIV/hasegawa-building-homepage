@@ -1,7 +1,7 @@
 /* modules */
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { ChatIcon, CollectionIcon, DotsHorizontalIcon, LocationMarkerIcon, ViewListIcon } from "@heroicons/react/solid";
+import { AtSymbolIcon, ChatIcon, InformationCircleIcon, LocationMarkerIcon, ViewListIcon } from "@heroicons/react/solid";
 
 /* components */
 import Top from "./Top";
@@ -34,8 +34,10 @@ export default function App() {
         <nav className="below-tab">
           <ul>
             <li className="below-tab-item">
-              <ViewListIcon className="below-tab-icon" />
-              <p>HOME</p>
+              <Link to="/" className="below-tab-item">
+                <ViewListIcon className="below-tab-icon" />
+                <p>HOME</p>
+              </Link>
             </li>
             <li>
               <Link to="/access" className="below-tab-item">
@@ -44,14 +46,21 @@ export default function App() {
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="below-tab-item">
-                <ChatIcon className="below-tab-icon" />
-                <p>CONTACT</p>
+              <Link to="/about" className="below-tab-item">
+                <AtSymbolIcon className="below-tab-icon" />
+                <p>ABOUT</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/information" className="below-tab-item">
+                <InformationCircleIcon className="below-tab-icon" />
+                <o>INFORMATION</o>
               </Link>
             </li>
             <li>
               <Link to="/contact" className="below-tab-item">
-                <DotsHorizontalIcon className="below-tab-icon" />
+                <ChatIcon className="below-tab-icon" />
+                <p>CONTACT</p>
               </Link>
             </li>
           </ul>
